@@ -16,9 +16,9 @@ namespace FitnessApp.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public object Get(int id)
         {
-            return "value";
+            return new { name = "value", id = id };
         }
 
         // POST api/values
